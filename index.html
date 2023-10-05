@@ -126,7 +126,7 @@
 
 
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
+	<div id="fh5co-resume" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -143,10 +143,10 @@
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">MERN Stack Developer</h3>
-									<span class="company">Echo Ennovation IT - Aug 2023 - Present</span>
+									<h3 class="timeline-title" style="color: black;">MERN Stack Developer</h3>
+									<span class="company" style="color: black; font-weight: bold;">Echo Ennovation IT - Aug 2023 - Present</span>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline-body" style="color: black;">
 									<p>As a MERN Stack Developer at Echo Ennovation IT, I'm on a journey to harness the power of cutting-edge technology to build innovative web solutions.</p>
 								</div>
 							</div>
@@ -156,9 +156,9 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Intern</h3>
-									<span class="company">Astics Techlab Pvt. Ltd. - Mar 2023 - June 2023</span>
+									<span class="company" style="color: black; font-weight: bold;">Astics Techlab Pvt. Ltd. - Mar 2023 - June 2023</span>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline-body" style="color: black;">
 									<p>During my internship at Astics Techlab Pvt. Ltd., I had the valuable opportunity to gain practical experience and contribute to the dynamic world of technology.</p>
 								</div>
 							</div>
@@ -173,9 +173,9 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Master in Computer Application</h3>
-									<span class="company">Nirma University : Sept 2021 - June 2023</span>
+									<span class="company" style="color: black;font-weight: bold;">Nirma University : Sept 2021 - June 2023</span>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline-body" style="color: black;">
 									<p>I pursued my Master's in Computer Application at Nirma University, where I dedicated myself to acquiring a deep understanding of computer science and its practical applications. During this program, I focused on a wide range of subjects and gained valuable knowledge and skills.</p>
 								</div>
 							</div>
@@ -185,9 +185,9 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">B.Sc IT (Information Technology)</h3>
-									<span class="company"> Charusat University : Sept 2018 - June 2021</span>
+									<span class="company" style="color: black; font-weight: bold;"> Charusat University : Sept 2018 - June 2021</span>
 								</div>
-								<div class="timeline-body">
+								<div class="timeline-body" style="color: black;">
 									<p>My journey in the field of Information Technology commenced with my Bachelor's degree at Charusat University. This program provided me with a strong foundation in IT and a comprehensive understanding of various facets of the field. During my undergraduate studies, I delved into essential subjects and gained knowledge.</p>
 								</div>
 							</div>
@@ -300,21 +300,51 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
+					<h2>Projects</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 text-center col-padding animate-box">
 					<!-- Add onclick event handler to the anchor tag -->
-					<a href="#" class="work" style="background-image: url(https://github.com/jeeneesh112/Online-food-delivery-application-MERN-Stack/blob/master/client/public/Images/logo.png?raw=true); background-color: white;" onclick="showPopup()">
+					<a href="#" class="work" style="background-image: url(https://github.com/jeeneesh112/Online-food-delivery-application-MERN-Stack/blob/master/client/public/Images/logo.png?raw=true); background-color: white; background-position: 56%;" onclick="showPopup()">
 						<div class="desc">
 							<h3>Online Food Delivery Application</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<!-- Add onclick event handler to the anchor tag -->
+					<a href="#" class="work" style="background-image: url(https://media.istockphoto.com/id/1172232285/vector/smart-home-system-concept-tablet-controls-domestics-appliances-via-internet-of-things.jpg?s=612x612&w=0&k=20&c=msmpJiu4u5936JPHKEh_QuL4oPxd23HSBbVDDkjkdAc=); background-color: white; background-position: 56%;" onclick="showIotPopup()">
+						<div class="desc">
+							<h3>Fire Alarm Sensor with IOT</h3>
 						</div>
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div id="fh5co-work" class="fh5co-bg-light">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Certificates</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-center col-padding animate-box">
+					<!-- Add onclick event handler to the anchor tag -->
+					<a href="#" class="work" style="background-image: url(images/UC-e5584f67-1639-4a4d-8ad6-fa6ddb1c33db.jpg); background-color: white; background-position: 56%;" onclick="showReactCertificate()">
+						<div class="desc">
+							<h3>ReactJs Certificate</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<style>
         /* Style for the popup */
@@ -346,6 +376,13 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+		.certificate-item img {
+			max-width: 100%;
+			height: auto;
+		}
+
+
     </style>
 
 	<div id="popup" class="popup">
@@ -362,6 +399,35 @@
 			</ul>
 		</div>
 	</div>
+
+	<div id="iotpopup" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="closeIotPopup()">&times;</span>
+			<h2>Fire Alarm Sensor with IOT</h2>
+			<!-- Add your project description and functionalities here -->
+			<p>This is a description of the Online Food Delivery Application...</p>
+			<p>Functionalities:</p>
+			<ul>
+				<li>Functionality 1</li>
+				<li>Functionality 2</li>
+				<!-- Add more functionalities as needed -->
+			</ul>
+		</div>
+	</div>
+
+	<div id="ReactJs" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="closeReactCerti()">&times;</span>
+			<h2>ReactJs Certificate</h2>
+			<!-- Add your project description and functionalities here -->
+			<!---- show certificate image here ---->
+
+			<div class="certificate-item">
+				<img src="images/UC-e5584f67-1639-4a4d-8ad6-fa6ddb1c33db.jpg" alt="ReactJs Certificate">
+			</div>
+
+		</div>
+	</div>
 	
 	<script>
 		function showPopup() {
@@ -369,68 +435,34 @@
 			document.getElementById("popup").style.display = "block";
 
 		}
+		function showIotPopup() {
+			event.preventDefault();
+			document.getElementById("iotpopup").style.display = "block";
+
+		}
 		function closePopup() {
 			document.getElementById("popup").style.display = "none";
 		}
+
+		function closeIotPopup() {
+			document.getElementById("iotpopup").style.display = "none";
+		}
+
+		function showReactCertificate() {
+			event.preventDefault();
+			document.getElementById("ReactJs").style.display = "block";
+
+		}
+
+		function closeReactCerti() {
+			document.getElementById("ReactJs").style.display = "none";
+		}
+
+		
 	</script>
 
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Post on Medium</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Photoshoot On The Street</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Surfing at Philippines</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Capture Living On Uderwater</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
+
 	
 	<div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
@@ -487,19 +519,8 @@
 			</form>	
 		</div>
 	</div>
-
-	<div id="map" class="fh5co-map"></div>
-	</div>
 	
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2017 Free HTML5 Template. All Rights Reserved. <br>Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
