@@ -67,7 +67,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(https://www.mindinventory.com/blog/wp-content/uploads/2021/06/mern-stack.webp);height: 120px;width: 380px;"></div>
+							<div class="profile-thumb" style="background: url(images/IMG_20230114_225356.jpg);height: 350px;width: 380px;"></div>
 							<h1><span>Jeeneesh Patel</span></h1>
 							<h3><span>MERN Stack Developer</span></h3>
 							<p>
@@ -333,10 +333,20 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 text-center col-padding animate-box">
+					<p style="font-weight: bold;">ReactJs Course</p>
 					<!-- Add onclick event handler to the anchor tag -->
 					<a href="#" class="work" style="background-image: url(images/UC-e5584f67-1639-4a4d-8ad6-fa6ddb1c33db.jpg); background-color: white;;" onclick="showReactCertificate()">
 						<div class="desc">
 							<h3>ReactJs Certificate</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box">
+					<p style="font-weight: bold;">NodeJs Course</p>
+					<!-- Add onclick event handler to the anchor tag -->
+					<a href="#" class="work" style="background-image: url(images/nodejs.jpeg); background-color: white;;" onclick="showNodeCertificate()">
+						<div class="desc">
+							<h3>NodeJs Certificate</h3>
 						</div>
 					</a>
 				</div>
@@ -406,7 +416,7 @@
 				<!-- Add more functionalities as needed -->
 			</ul>
 			<h4 style="font-weight: 900;">Skills: Javascript, ReactJs, Node.js, MongoDB, HTML & CSS</h4>
-			<h4 style="font-weight: 900;">Github :<a href="https://github.com/jeeneesh112/Online-food-delivery-application-MERN-Stack" target="_blank">https://github.com/jeeneesh112/Online-food-delivery-application-MERN-Stack</a></h4>
+			<h4 style="font-weight: 900;">Github :<a href="https://github.com/jeeneesh112/Online-food-delivery-application-MERN-Stack" target="_blank">Online Food Delivery Application</a></h4>
 		</div>
 	</div>
 
@@ -418,8 +428,8 @@
 			<p>In this completed project, I successfully designed and built an IoT-enabled fire alarm sensor, integrating hardware components and software development. The sensor effectively detects the presence of smoke or fire and sends real-time alerts to a web-based dashboard and a mobile application, enabling remote monitoring and control. This project has significantly enhanced fire safety by providing timely notifications and enabling efficient remote management.</p>
 			<h4 style="font-weight: 900;">Functionalities:</h4>
 			<ul>
-				<li>Functionality 1</li>
-				<li>Functionality 2</li>
+				<li>The core functionality of the system is to detect the presence of fire or smoke. It uses specialized smoke detectors and/or heat sensors for this purpose.</li>
+				<li>When the sensor detects smoke or fire, it immediately triggers an alert. This alert is sent in real-time to a central monitoring system.</li>
 				<!-- Add more functionalities as needed -->
 			</ul>
 		</div>
@@ -431,6 +441,17 @@
 			<h2>ReactJs Certificate</h2>
 			<div class="certificate-item">
 				<img src="images/UC-e5584f67-1639-4a4d-8ad6-fa6ddb1c33db.jpg"  alt="ReactJs Certificate">
+			</div>
+
+		</div>
+	</div>
+
+	<div id="NodeJs" class="popup">
+		<div class="popup-content">
+			<span class="close" onclick="closeNodeCerti()">&times;</span>
+			<h2>NodeJs Certificate</h2>
+			<div class="certificate-item">
+				<img src="images/nodejs.jpeg"  alt="NodeJs Certificate">
 			</div>
 
 		</div>
@@ -465,6 +486,16 @@
 			document.getElementById("ReactJs").style.display = "none";
 		}
 
+		function showNodeCertificate() {
+			event.preventDefault();
+			document.getElementById("NodeJs").style.display = "block";
+
+		}
+
+		function closeNodeCerti() {
+			document.getElementById("NodeJs").style.display = "none";
+		}
+
 		
 	</script>
 
@@ -477,55 +508,14 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Hire Me!</h2>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-					<p><a href="#" class="btn btn-default btn-lg">Contact Us</a></p>
+					<p>Welcome to my portfolio! I'm passionate about what I do, and I'm ready to bring my skills and expertise to your project. With a strong background in MERN Stack applications development, I'm confident in my ability to deliver high-quality results that meet your needs and exceed your expectations.</p>
+					<p><a href="mailto:pateljinish0112@gmail.com" class="btn btn-default btn-lg">Contact Us</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div>
 	
 
 
