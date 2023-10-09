@@ -213,11 +213,12 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
   height: auto;
   width: auto;
-
   @media (max-width: 768px) {
-    height: 100px;
-    width: 100px;
-  }
+    .profile-thumb {
+        width: 100px; /* Set the desired width */
+        height: 100px; /* Set the desired height */
+    }
+}
 }
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
